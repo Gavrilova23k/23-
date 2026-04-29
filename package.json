@@ -1,0 +1,43 @@
+{
+  "name": "tourism-app",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --webpack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio",
+    "db:init": "node scripts/init-db.js",
+    "db:reset": "node scripts/reset-db.js"
+  },
+  "dependencies": {
+    "@auth/core": "^0.34.3",
+    "@tanstack/react-query": "^5.100.1",
+    "@trpc/client": "^11.16.0",
+    "@trpc/next": "^11.16.0",
+    "@trpc/react-query": "^11.16.0",
+    "@trpc/server": "^11.16.0",
+    "@types/better-sqlite3": "^7.6.13",
+    "axios": "^1.8.4",
+    "better-sqlite3": "^12.9.0",
+    "drizzle-orm": "^0.45.2",
+    "next": "^16.2.4",
+    "next-auth": "^4.24.14",
+    "react": "^19.2.5",
+    "react-calendar": "^5.1.0",
+    "react-dom": "^19.2.5",
+    "superjson": "^2.2.6",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.2",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "drizzle-kit": "^0.31.10",
+    "typescript": "~5.7.2"
+  }
+}
